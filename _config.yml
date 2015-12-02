@@ -8,14 +8,17 @@
 # Site settings
 title: Avik Chakraborty
 email: avikjis27@gmail.com
+facebook: https://www.facebook.com/avikjis27
+linkedin: https://in.linkedin.com/in/avikjis27
+github: https://github.com/avikjis27
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This website showcase the craftsmanship of a very passionate computer engineer, an entrepreneur, a learner (strictly not a RESOURCE).
+  Besides sharing technical stuff with my fellow mates, this website helps to give a shape to my digital life. I would really like to be introduced with new friends so please don’t hesitate to put your footprint on my digital life.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://avikjis27.github.io/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+repo_name: avikjis27.github.io
+github_username:  avikjis27
 
 # Build settings
 markdown: kramdown
