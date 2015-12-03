@@ -176,6 +176,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    min-height: 35em;
 }
 
 .page-heading {
@@ -188,6 +189,9 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: lighten($grey-color, 40%);
     }
 }
 
