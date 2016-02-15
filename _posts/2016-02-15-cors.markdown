@@ -47,11 +47,13 @@ I have REST API deployed in *http://localhost:4567/* domain and client UI applic
 The response I got in my chrome browser is follows:
 
 **For GET and POST**
+
 >XMLHttpRequest cannot load http://localhost:4567/RestJersey/rest/v1.0/call. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8080' is therefore not allowed access.
 
 For [Simple requests](https://www.w3.org/TR/cors/#terminology) there will be no preflight request, for other requests there will be a preflight (HTTP OPTION) request as mentioned below for PUT and DELETE.
 
 **For PUT and DELETE**
+
 >XMLHttpRequest cannot load http://localhost:4567/RestJersey/rest/v1.0/call. Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8080' is therefore not allowed access.
 
 Let us see the request and response HTTP headers for simple request.
