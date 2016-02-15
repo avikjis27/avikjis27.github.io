@@ -46,8 +46,31 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
+/**
+Bootstrap
 
+*/
+.biodata{
+  color: $header-bg-color;
+}
+.matter-column{
 
+}
+.matter-headline{
+  border-style: solid none solid none;
+  border-width: 1px;
+  font-weight: bold;
+  margin-left: 21px;
+}
+
+.matter-header{
+
+}
+
+.matter-headline-icon{
+  float: left;
+  padding-top: 2px;
+}
 
 /**
  * Figures
@@ -100,7 +123,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 

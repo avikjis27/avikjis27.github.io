@@ -5,6 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+paginate: 1
 # Site settings
 title: Avik Chakraborty
 email: avikjis27@gmail.com
@@ -21,3 +22,7 @@ repo_name: avikjis27.github.io
 github_username:  avikjis27
 # Build settings
 markdown: kramdown
+gems: [jekyll-paginate]
+paginate_path: /_posts/page:num/
+sass:
+  compressed: true

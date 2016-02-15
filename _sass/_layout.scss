@@ -206,9 +206,15 @@
 
 }
 
+
+.post-list p::first-letter{
+  font-size: 20px;
+  font-weight: bold;
+}
 .post-link {
     display: block;
     font-size: 24px;
+    padding-top: 10px;
 }
 .post-tags{
   font-size: 11px;
