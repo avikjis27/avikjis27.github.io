@@ -17,15 +17,19 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #FFFFFF;
 $brand-color:      #2a7ae2;
-$header-bg-color:  #A00000;
+//$header-bg-color:  #A00000;
+$header-bg-color: #44969E;
+$header-bg-color-light: lighten($header-bg-color, 40%);
+
 $post-excerpt-color: rgba(160, 0, 0, 0.8);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
+$grey-color-lighter: lighten($grey-color, 60%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1500px;
+$content-width:    950px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -51,5 +55,7 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "hire_me",
+        "about"
 ;

@@ -29,6 +29,10 @@
     }
 }
 
+.site-title:hover {
+    color: $grey-color-lighter;
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
@@ -175,7 +179,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    margin-top: $spacing-unit;
     min-height: 35em;
 }
 
@@ -204,6 +208,15 @@
     font-size: $small-font-size;
     color: $grey-color;
 
+
+}
+
+.post-meta.tags{
+  padding: 0px 0px 1px 0px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 2px;
+    border-color: $header-bg-color;
 }
 
 

@@ -5,8 +5,9 @@ date:   2016-02-15 23:00:00 +0530
 categories: javascript
 tags: CORS RIA
 place: Kolkata, India
+author: Avik Chakraborty
 ---
-### Introduction
+
 Mashup or web application hybrid is now becoming very common. Web mashup is a web development practice where a webpage decorate itself with the data from different providers who published their services through API. The APIs are certainly deployed in a domain different from the domain where its consumers are deployed. In traditional web development practice the UI and server side logic deployed in a same domain and these self-contained applications need cross domain communication rarely. Now the web applications are getting loosely coupled and server side - client side can be deployed in some separate ecology (having separate domain, server etc.) altogether.  In Web 1.0 business model, companies stored their data within their periphery and provides portal kind of interface to consumers but in Web 2.0 more and more b2b models are emerging and data eventually flow across the business through some defined interface (API, web sockets etc.) giving a mesh structure.
 
 In this ecology what essential is securing the inter domain communication keeping the development complexity as low possible. [Same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) of the browser barred application to communicate beyond its own domain for some serious security reasons. [CORS](https://www.w3.org/TR/cors/) (Cross Origin Resource Sharing) is W3C recommendation for cross origin communication which is our main focus here.
