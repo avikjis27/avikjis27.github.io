@@ -1,3 +1,16 @@
 .about_me{
-
+  h3{
+    color: $header-bg-color;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+  p.hello{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+  }
+  p.hello span{
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    font-size: 14px;
+  }
 }
