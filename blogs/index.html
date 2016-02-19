@@ -12,6 +12,8 @@ permalink: /blogs/
       <li>
         <span class="post-meta"> <i class="fa fa-calendar"></i>&nbsp;&nbsp; {{ post.date | date: "%b %-d, %Y" }}</span>
         &nbsp;&nbsp;
+        <span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+        &nbsp;&nbsp;
         {% for tag in post.tags %}
           <span class="post-tags"><i class="fa fa-tag"></i>&nbsp;{{ tag }}</span>
         {% endfor %}
@@ -20,19 +22,18 @@ permalink: /blogs/
           <span class="post-cats"><i class="fa fa-flag"></i>&nbsp;{{ cat }}</span>
         {% endfor %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
 
-        {{ post.excerpt }}
+
+
 
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <div class="pagination">
+  <!--<div style="float:left"><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p></div>
+  <div class="blog-pagination">
+
     <ul>
         <li id="pagination-prev">
           {% if paginator.previous_page %}
@@ -74,7 +75,7 @@ permalink: /blogs/
           {% endif %}
         </li>
     </ul>
-  </div>
+  </div>-->
   <!-- /pagination -->
 
 </div>

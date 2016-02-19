@@ -6,7 +6,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <p>{{ site.description }}</p>
+        <p class="footer-description">{{ site.description }}</p>
 
         <ul class="social-media-list">
           {% if site.github_username %}
@@ -14,8 +14,9 @@
 
             <a href="{{ site.facebook }}"> <i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="{{ site.linkedin }}"> <i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a href="{{ site.github }}"> <i class="fa fa-github-square fa-2x"></i></a> or write email to <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-
+            <a href="{{ site.github }}"> <i class="fa fa-github-square fa-2x"></i></a>
+            <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-square fa-2x"></i></a>
+          </li>
 
 
           </li>
