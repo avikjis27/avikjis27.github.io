@@ -15,11 +15,11 @@ permalink: /blogs/
         <span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
         &nbsp;&nbsp;
         {% for tag in post.tags %}
-          <span class="post-tags"><i class="fa fa-tag"></i>&nbsp;{{ tag }}</span>
+          <span class="post-tags hidden-xs hidden-sm"><i class="fa fa-tag"></i>&nbsp;{{ tag }}</span>
         {% endfor %}
         &nbsp;&nbsp;
         {% for cat in post.categories %}
-          <span class="post-cats"><i class="fa fa-flag"></i>&nbsp;{{ cat }}</span>
+          <span class="post-cats hidden-xs hidden-sm"><i class="fa fa-flag"></i>&nbsp;{{ cat }}</span>
         {% endfor %}
 
 
