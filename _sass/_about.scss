@@ -1,8 +1,29 @@
+my_images{
+  
+}
+
 .about_me{
   h3{
     color: $header-bg-color;
     font-family: 'Cedarville Cursive', cursive;
   }
+
+ ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+li:before {
+    content: "\002022"; font-family:"Webdings";
+    color: $header-bg-color; /* or whatever color you prefer */
+    padding-right: 7px;
+}
   p.hello{
     font-family: 'Cedarville Cursive', cursive;
     font-size: 20px;
