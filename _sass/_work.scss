@@ -25,5 +25,34 @@
     float: left;
 
   }
+  .company-project {
+    /* float: left; */
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #828282;
+    /* float: left; */
+    margin-top: 27px;
+}
+  .company-resp{
+    margin-top: 12px;
+    padding-bottom:12px;
+    font-size: 16px;
+  }
+   ul {
+      list-style: none;
+      padding:0;
+      margin:0;
+  }
+
+  li {
+      padding-left: 1em;
+      text-indent: -.7em;
+  }
+
+  li:before {
+      content: "\002022"; font-family:"Webdings";
+      color: $grey-color;
+      padding-right: 10px;
+  }
 
 }
