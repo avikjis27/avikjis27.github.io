@@ -30,7 +30,20 @@
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="/lib/scripts.js"> </script>
+<script>
+$(document).ready(function(){
+    var waypoints = $('.wp').waypoint({
+      handler: function(direction) {
+
+          if($(this.element).hasClass('wpL')){
+              $(this.element).addClass('animated fadeInLeft');
+              $(this.element).removeClass('wp wpL');
+          }
+      },
+      offset:'95%'
+    });
+});
+</script>
 
 
 
