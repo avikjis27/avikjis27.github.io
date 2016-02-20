@@ -36,7 +36,7 @@
   .company-resp{
     margin-top: 12px;
     padding-bottom:12px;
-    
+
   }
    ul {
       list-style: none;
@@ -56,4 +56,50 @@
       padding-right: 10px;
   }
 
+}
+
+.coordinate{
+    width: 20em;
+    height: 15em;
+
+    border-width: 1px;
+    margin: 1px;
+
+    legend{
+      font-size: 12px;
+      letter-spacing: 4px;
+      color: $grey-color
+    }
+    ul{
+      list-style: none;
+      color: $grey-color;
+      font-size: 16px;
+      li:before{
+        content: none;
+
+
+      }
+    }
+
+
+
+
+
+}
+.time{
+  margin-left: 4px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: $brand-color-sec;
+}
+.institute{
+  list-style: none;
+  color: $grey-color;
+  font-size: 16px;
+}
+.institute_stream{
+
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: $grey-color;
 }
