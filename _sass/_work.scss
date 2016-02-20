@@ -1,0 +1,29 @@
+.work{
+  .header{
+    color: $brand-color;
+    letter-spacing: 9px;
+    font-size: 12px;
+  }
+  .company-header{
+    color: $brand-color-sec;
+    margin-top: 8px;
+    font-size: 23px;
+  }
+  .company-duration{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: $grey-color;
+    margin-left: auto;
+    text-align: end;
+    float:right;
+  }
+  .company-designation{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: $grey-color;
+    float: left;
+
+  }
+
+}

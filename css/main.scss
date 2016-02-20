@@ -16,7 +16,13 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #FFFFFF;
-$brand-color:      #2a7ae2;
+$brand-color:      #44969E;
+$brand-color-light:lighten($brand-color, 40%);
+$brand-color-job:lighten($brand-color, 20%);
+
+$brand-color-sec: rgba(255, 152, 0, 0.75);
+
+
 //$header-bg-color:  #A00000;
 $header-bg-color: #44969E;
 $header-bg-color-job: lighten($header-bg-color, 20%);
@@ -57,6 +63,6 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "hire_me",
+        "work",
         "about"
 ;

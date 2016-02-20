@@ -1,10 +1,10 @@
 my_images{
-  
+
 }
 
 .about_me{
   h3{
-    color: $header-bg-color;
+    color: $brand-color;
     font-family: 'Cedarville Cursive', cursive;
   }
 
@@ -21,7 +21,7 @@ li {
 
 li:before {
     content: "\002022"; font-family:"Webdings";
-    color: $header-bg-color; /* or whatever color you prefer */
+    color: $brand-color;
     padding-right: 7px;
 }
   p.hello{

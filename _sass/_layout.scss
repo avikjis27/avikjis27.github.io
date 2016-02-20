@@ -1,6 +1,20 @@
+ @font-face { font-family: 'Cedarville Cursive'; src: url('/lib/fonts/Cedarville_Cursive/Cedarville-Cursive.ttf'); }
+ @font-face { font-family: Ubuntu; font-weight: normal; src: url('/lib/fonts/Ubuntu/Ubuntu-Regular.ttf');}
+ @font-face { font-family: Ubuntu; font-weight: bold; src: url('/lib/fonts/Ubuntu/Ubuntu-Bold.ttf');}
+
+
 /**
  * Site header
  */
+a{
+    color: $brand-color;
+    text-decoration: none;
+    transition: color 1s;
+}
+a:hover{
+    color: $brand-color-light;
+
+}
 
 .text-center {
     text-align: center !important;
@@ -11,8 +25,8 @@
 
 }
 .site-header {
-    border-top: 3px solid $header-bg-color;
-    border-bottom: 1px solid $header-bg-color-light;
+    border-top: 3px solid $brand-color;
+    border-bottom: 1px solid $brand-color-light;
     min-height: 56px;
 
     position: relative;
@@ -25,7 +39,7 @@
     letter-spacing: 0px;
     margin-bottom: 0;
     font-family: 'Cedarville Cursive', cursive;
-    color: $header-bg-color;
+    color: $brand-color;
 
 }
 
@@ -33,7 +47,7 @@
     margin: 0 0 10px;
     font-family: cursive;
     line-height: 27px;
-    color: $header-bg-color-job;
+    color: $brand-color-job;
 }
 
 .site-nav {
@@ -43,7 +57,7 @@
 
 
     .page-link {
-        color: $header-bg-color;
+        color: $brand-color;
         line-height: $base-line-height;
         text-decoration: none !important;
         font-weight: bold;
@@ -54,7 +68,7 @@
         }
     }
     .page-link:hover {
-        color: $header-bg-color-light;
+        color: $brand-color-light;
         line-height: $base-line-height;
         text-decoration: none !important;
         font-weight: bold;
@@ -73,7 +87,7 @@
     /* font-weight: bold; */
     font-size: 18px;
     margin-top: -20px !important;
-    color: $header-bg-color;
+    color: $brand-color;
     letter-spacing: 11px;
     line-height: 38px;
 }
@@ -180,6 +194,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    letter-spacing: 4px;
 
 
 }
@@ -189,7 +204,7 @@
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-radius: 2px;
-    border-color: $header-bg-color;
+    border-color: $brand-color;
 }
 
 
