@@ -6,6 +6,10 @@
 /**
  * Site header
  */
+
+.wp {
+  visibility: hidden !important;
+}
 a{
     color: $brand-color;
     text-decoration: none;
