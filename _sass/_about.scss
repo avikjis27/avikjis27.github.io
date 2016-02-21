@@ -1,10 +1,19 @@
-my_images{
+.my_images{
+
+    background: url("/images/about_image.jpg") no-repeat;
+    background-size: 100%;
+    height: 22em;
+    width: 14em;
+    margin-top: 4em;
+    transform: rotate(-7deg);
+
+
 
 }
 
 .about_me{
   h3{
-    color: $brand-color;
+    color: $brand-color-sec;
     font-family: 'Cedarville Cursive', cursive;
   }
 

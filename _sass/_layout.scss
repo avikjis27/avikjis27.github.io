@@ -197,7 +197,7 @@ a:hover{
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color:$brand-color-sec;
     letter-spacing: 4px;
 
 
@@ -250,6 +250,7 @@ a:hover{
 .post-link{
   width: 15em;
   text-overflow: ellipsis;
+
 }
 .post-title {
     font-size: 42px;
