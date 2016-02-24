@@ -28,6 +28,8 @@ Obeying SOP for all kind of objects essentially means disrespecting the concept 
 
 Let us first understand how user agent behaves while sharing resources cross origin.
 
+![CORS - How User agent behaves ] (https://drive.google.com/open?id=0B1v1VGAjb517eHBaVXpzTjRFVFE)
+
 ### CORS in Action
 I have REST API deployed in *http://localhost:4567/* domain and client UI application deployed in *http://localhost:8080/*. I wrote jquery ajax script to access the REST API using below code fragments.
 
