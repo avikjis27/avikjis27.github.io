@@ -26,9 +26,25 @@ Obeying SOP for all kind of objects essentially means disrespecting the concept 
 ### Cross-Origin Resource Sharing
 >Cross-origin resource sharing (CORS) is a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. In particular, JavaScript's AJAX calls can use the XMLHttpRequest mechanism. Such "cross-domain" requests would otherwise be forbidden by web browsers as per the same-origin security policy. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is more useful than only allowing same-origin requests, and is more secure than simply allowing all cross-origin requests. 		**From Wikipedia, the free encyclopedia**
 
-Let us first understand how user agent behaves while sharing resources cross origin.
+Let us first understand how user agent behaves while sharing resources cross origin. Below is the algorithm based on the [W3C Recommendation](https://www.w3.org/TR/cors/), how the user agent should behave. Before going through the algorithm let us understand some basic terminology used in the algorithm.
 
-![CORS - How User agent behaves](https://drive.google.com/open?id=0B1v1VGAjb517eHBaVXpzTjRFVFE)
+#### Simple Method
+
+- GET
+- HEAD
+- POST
+
+
+#### Simple Header
+
+- Accept
+- Accept-Language
+- Content-Language  
+- Content-Type : application/x-www-form-urlencoded, multipart/form-data or text/plain
+
+For reference please refer to [W3C Recommendation](https://www.w3.org/TR/cors/#terminology)
+
+![CORS - How User agent behaves](/images/blogs/2016-02-15-cors/CORS_User agent.png "User agent CORS algorithm")
 
 ### CORS in Action
 I have REST API deployed in *http://localhost:4567/* domain and client UI application deployed in *http://localhost:8080/*. I wrote jquery ajax script to access the REST API using below code fragments.
