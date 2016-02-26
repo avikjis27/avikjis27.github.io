@@ -4,16 +4,17 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
+    {% unless page.impress %}
+      {% include header.html %}
+    {% endunless %}
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-
-    {% include footer.html %}
+    {% unless page.impress %}
+      {% include footer.html %}
+    {% endunless %}
 
   </body>
 
