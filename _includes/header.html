@@ -17,5 +17,33 @@
 
 
   </div>
+  <div class="headerwp wp-no-disp">
+    <div class="site-title">{{ site.title }}</div>
+    <ul class="fixed-nav hidden-xs hidden-sm">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <li>  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+
+      {% endfor %}
+    </ul>
+    <div class="fixed-nav hidden-md hidden-lg mobmenu" id="menubutton"> <i class="fa fa-bars"></i> </div>
+    <div class="mobmenu-list hidden-md hidden-lg wp-no-disp">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <div class="text-center" style="height:2em">  <a class="page-link" style="color: white;" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
 
 </header>

@@ -31,19 +31,65 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script>
-$(document).ready(function(){
-    var waypoints = $('.wp').waypoint({
-      handler: function(direction) {
 
-          if($(this.element).hasClass('wpL')){
-              $(this.element).addClass('animated fadeInLeft');
-              $(this.element).removeClass('wp wpL');
-          }
-      },
-      offset:'95%'
-    });
-});
-</script>
+
+  $(document).ready(function(){
+
+      $("#menubutton").on('click',function(){
+        if($(".mobmenu-list").hasClass("wp-no-disp")){
+          $(".mobmenu-list").removeClass('wp-no-disp fadeOutLeft');
+          $(".mobmenu-list").addClass('animated fadeInRight');
+        }else{
+          $(".mobmenu-list").removeClass('fadeInDown');
+          $(".mobmenu-list").addClass('fadeOutLeft');
+          window.setTimeout(function(){
+            $(".mobmenu-list").addClass('wp-no-disp');
+          },300);
+        }
+      })
+
+      var waypoints = $('.wp').waypoint({
+        handler: function(direction) {
+
+            if($(this.element).hasClass('wpL')){
+                $(this.element).addClass('animated fadeInLeft');
+                $(this.element).removeClass('wp wpL');
+            }
+        },
+        offset:'95%'
+      });
+
+      var headerwp = $('.headerwp').waypoint({
+        handler: function(direction) {
+                var that = this;
+                if(direction === 'down'){
+
+                  $(this.element).removeClass('wp-no-disp');
+                    $(this.element).addClass('fixed-site-header animated fadeInDown');
+                    //$(this.element).hide();
+                }
+                else{
+                  $(this.element).removeClass('fadeInDown');
+                  $(this.element).addClass('fadeOutUp');
+                  window.setTimeout(function(){
+
+                    $(that.element).addClass('wp-no-disp');
+                    $(that.element).removeClass('fixed-site-header animated fadeOutUp');
+
+                    //$(this.element).hide();
+                  },300);
+
+                }
+
+                //$(this.element).removeClass('site-header');
+                console.log('Trigger point: ' + this.triggerPoint);
+
+        },
+        offset:'-100'
+      });
+
+  });
+  </script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

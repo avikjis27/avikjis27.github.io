@@ -1,4 +1,5 @@
 
+
 /**
  * Site header
  */
@@ -6,6 +7,10 @@
 .wp {
   visibility: hidden !important;
 }
+.wp-no-disp{
+  display: none !important;
+}
+
 a{
     color: $brand-color;
     text-decoration: none;
@@ -23,6 +28,83 @@ a:hover{
 
 .navigation{
 
+}
+
+.fixed-site-header {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: $brand-color;
+    z-index: 10;
+
+
+    .site-title {
+      float: left;
+      color: white;
+      font-family: Ubuntu;
+      font-size: 19px;
+      margin-top: -20px;
+      padding-left: 5em;
+
+    }
+
+    .fixed-nav{
+      float: right;
+      font-family: Ubuntu;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-right: 40px;
+      ul{
+        list-style: none;
+
+      }
+      li{
+
+        display: inline;
+        a{
+            color: white !important;
+            padding-right: 1em;
+        }
+        a:hover{
+            color: $brand-color-light !important;
+        }
+      }
+    }
+    .fixed-nav-mob{
+
+      font-family: Ubuntu;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-right: 40px;
+      ul{
+        list-style: none;
+
+      }
+      li{
+
+        display: inline;
+        a{
+            color: white !important;
+            padding-right: 1em;
+        }
+        a:hover{
+            color: $brand-color-light !important;
+        }
+      }
+    }
+    .mobmenu{
+      color: white;
+      cursor: pointer;
+    }
+    .mobmenu-list{
+      background-color: rgba(0, 0, 0, 0.8);;
+      margin-top: 40px;
+      z-index: 0;
+      position: fixed;
+      width: 100%;
+    }
 }
 .site-header {
     border-top: 3px solid $brand-color;
