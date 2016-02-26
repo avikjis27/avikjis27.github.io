@@ -97,6 +97,11 @@ a:hover{
     .mobmenu{
       color: white;
       cursor: pointer;
+      transition: color 1s;
+    }
+    .mobmenu:hover{
+      color: $grey-color-dark;
+      cursor: pointer;
     }
     .mobmenu-list{
       background-color: rgba(0, 0, 0, 0.8);;
