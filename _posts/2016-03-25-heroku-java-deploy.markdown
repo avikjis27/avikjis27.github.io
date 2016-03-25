@@ -8,7 +8,7 @@ place: Pune, India
 author: Avik Chakraborty
 ---
 
-##Step 0
+## Step 0
 Hosting Java web application in in Heroku is very easy compared to the other cloud PAAS. Before being started be ready with the following software
 
  - Account on Heroku [Heroku Signup](https://id.heroku.com/login)
@@ -18,12 +18,13 @@ Hosting Java web application in in Heroku is very easy compared to the other clo
  
 The links are, when ever applicable, of Windows. So if you are mischievious and using some different platform then do google when ever needed.
 
-##Step 1
+## Step 1
 Install the Heroku toolbelt software from this [link](https://toolbelt.heroku.com/windows) and follow the prompts and click on the finish. After installing the Heroku toolbelt restart the system.
 
-##Step 2
+## Step 2
 Open your command prompt and type the following command. The expected result is given below.
-	C:\Users\Avik\git\Avik>heroku version
+	
+        C:\Users\Avik\git\Avik>heroku version
 	heroku/toolbelt/3.42.44 (i386-mingw32) ruby/2.1.7
 	heroku-cli/4.28.2-9156ffa (386-windows) go1.6
 	=== Installed Plugins
@@ -37,9 +38,9 @@ Open your command prompt and type the following command. The expected result is 
 	heroku-run@3.0.0
 	heroku-spaces@2.0.14
 	heroku-status@2.1.1
-##Step 3
-Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
 
+## Step 3
+Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
 	<project>
 		...
 		<build>
@@ -73,8 +74,3 @@ Create a simple maven web application in your favourite IDE and modify the *pom.
 		</build>
 		...
 	</project>
-
-
-
-
-
