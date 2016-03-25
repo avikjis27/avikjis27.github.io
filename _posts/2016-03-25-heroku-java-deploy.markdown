@@ -39,6 +39,7 @@ Open your command prompt and type the following command. The expected result is 
 	heroku-status@2.1.1
 ##Step 3
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
+
 	<project>
 		...
 		<build>
