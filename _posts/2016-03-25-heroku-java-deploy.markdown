@@ -41,36 +41,5 @@ Open your command prompt and type the following command. The expected result is 
 
 ## Step 3
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
-	<project>
-		...
-		<build>
-			...
-			<plugins>
-				...
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.3</version>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>copy</goal>
-							</goals>
-							<configuration>
-								<artifactItems>
-									<artifactItem>
-										<groupId>com.github.jsimone</groupId>
-										<artifactId>webapp-runner</artifactId>
-										<version>8.0.30.2</version>
-										<destFileName>webapp-runner.jar</destFileName>
-									</artifactItem>
-								</artifactItems>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</build>
-		...
-	</project>
+{% gist [64c3fa61df1dc50e24a6] %}
+
