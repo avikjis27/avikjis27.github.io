@@ -23,7 +23,7 @@ repo_name: avikjis27.github.io
 github_username:  avikjis27
 # Build settings
 markdown: kramdown
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,jekyll-gist]
 paginate_path: /blogs/page:num/
 sass:
   compressed: true

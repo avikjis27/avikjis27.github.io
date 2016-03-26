@@ -41,5 +41,5 @@ Open your command prompt and type the following command. The expected result is 
 
 ## Step 3
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
-{% gist [64c3fa61df1dc50e24a6] %}
+<script src="https://gist.github.com/avikjis27/64c3fa61df1dc50e24a6.js"></script>
 
