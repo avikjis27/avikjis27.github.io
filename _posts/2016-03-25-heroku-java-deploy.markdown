@@ -24,7 +24,7 @@ Install the Heroku toolbelt software from this [link](https://toolbelt.heroku.co
 ## Step 2
 Open your command prompt and type the following command. The expected result is given below.
 	
-        C:\Users\Avik\git\Avik>heroku version
+    C:\Users\Avik\git\Avik>heroku version
 	heroku/toolbelt/3.42.44 (i386-mingw32) ruby/2.1.7
 	heroku-cli/4.28.2-9156ffa (386-windows) go1.6
 	=== Installed Plugins
@@ -40,6 +40,51 @@ Open your command prompt and type the following command. The expected result is 
 	heroku-status@2.1.1
 
 ## Step 3
+Login to your heroku account.
+
+	C:\Users\Avik>heroku login
+	Enter your Heroku credentials.
+	Email: avikjis27@gmail.com
+	Password (typing will be hidden):
+	Logged in as avikjis27@gmail.com
+
+## Step 5
+Go inside your project folder and initialize git on that using following command
+
+	C:\Users\Avik\git\Test>git init
+	Initialized empty Git repository in C:/Users/Avik/git/Test/.git/
+
+## Step 6
+Add the remote repository for the heroku application
+
+	C:\Users\Avik\git\Test>heroku git:remote -a myherokutestapp01
+	set git remote heroku to https://git.heroku.com/myherokutestapp01.git
+
+To cross check, whether the remote repository correctly added, run the following command
+
+	C:\Users\Avik\git\Test>git remote -v
+	heroku  https://git.heroku.com/myherokutestapp01.git (fetch)
+	heroku  https://git.heroku.com/myherokutestapp01.git (push)
+
+## Step 4
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
 <script src="https://gist.github.com/avikjis27/64c3fa61df1dc50e24a6.js"></script>
 
+## Step 7
+Check the status of your working directory
+
+	C:\Users\Avik\git\Test>git status
+	On branch master
+
+	Initial commit
+
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .project
+        WebContent/
+        pom.xml
+        src/
+
+	nothing added to commit but untracked files present (use "git add" to track)
