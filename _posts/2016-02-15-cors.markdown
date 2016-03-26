@@ -44,7 +44,7 @@ Let us first understand how user agent behaves while sharing resources cross ori
 
 For reference please refer to [W3C Recommendation](https://www.w3.org/TR/cors/#terminology)
 
-![CORS - How User agent behaves](/images/blogs/2016-02-15-cors/CORS_User agent.png "User agent CORS algorithm")
+![CORS - How User agent behaves](/images/blogs/2016-02-15-cors/CORS_User_agent "User agent CORS algorithm")
 
 ### CORS in Action
 I have REST API deployed in *http://localhost:4567/* domain and client UI application deployed in *http://localhost:8080/*. I wrote jquery ajax script to access the REST API using below code fragments.

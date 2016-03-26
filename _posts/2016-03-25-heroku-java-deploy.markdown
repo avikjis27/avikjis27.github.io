@@ -48,6 +48,12 @@ Login to your heroku account.
 	Password (typing will be hidden):
 	Logged in as avikjis27@gmail.com
 
+## Step 4
+Create an application on heroku from the web dashboard
+
+![Heroku - Application creation](/images/blogs/2016-03-25-heroku-java-deploy/createapp1.PNG "Application creation on Heroku")	
+![Heroku - Application configuration](/images/blogs/2016-03-25-heroku-java-deploy/createapp2.PNG "Application configuration")	
+
 ## Step 5
 Go inside your project folder and initialize git on that using following command
 
@@ -66,11 +72,15 @@ To cross check, whether the remote repository correctly added, run the following
 	heroku  https://git.heroku.com/myherokutestapp01.git (fetch)
 	heroku  https://git.heroku.com/myherokutestapp01.git (push)
 
-## Step 4
+## Step 7
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
 <script src="https://gist.github.com/avikjis27/64c3fa61df1dc50e24a6.js"></script>
 
-## Step 7
+## Step 8
+Add a procfile in the route folder of your application
+<script src="https://gist.github.com/avikjis27/14746257672fdbe26b3c.js"></script>
+
+## Step 9
 Check the status of your working directory
 
 	C:\Users\Avik\git\Test>git status
@@ -88,3 +98,63 @@ Check the status of your working directory
         src/
 
 	nothing added to commit but untracked files present (use "git add" to track)
+	
+## Step 10
+Run the following command to commit the changes in local git repository
+
+	C:\Users\Avik\git\Avik>git add .
+	On branch master
+
+	Initial commit
+
+	Changes to be committed:
+	(use "git rm --cached <file>..." to unstage)
+
+        new file:   .classpath
+        new file:   .project
+        new file:   WebContent/META-INF/MANIFEST.MF
+        new file:   WebContent/index.html
+        new file:   pom.xml
+        new file:   src/com/avik/Hello.java
+
+
+	C:\Users\Avik\git\Test>git commit -m "initial commit"
+	[master (root-commit) 8663a16] initial commit
+	 6 files changed, 177 insertions(+)
+	 create mode 100644 .classpath
+	 create mode 100644 .project
+	 create mode 100644 WebContent/META-INF/MANIFEST.MF
+	 create mode 100644 WebContent/index.html
+	 create mode 100644 pom.xml
+	 create mode 100644 src/com/avik/Hello.java
+
+## Step 11
+Push the changes to Heroku remote repository
+
+	remote:        [INFO] ------------------------------------------------------------------------
+	remote:        [INFO] BUILD SUCCESS
+	remote:        [INFO] ------------------------------------------------------------------------
+	remote:        [INFO] Total time: 12.827 s
+	remote:        [INFO] Finished at: 2016-03-26T09:20:25+00:00
+	remote:        [INFO] Final Memory: 22M/181M
+	remote:        [INFO] ------------------------------------------------------------------------
+	remote: -----> Discovering process types
+	remote:        Procfile declares types -> (none)
+	remote:
+	remote: -----> Compressing...
+	remote:        Done: 56.4M
+	remote: -----> Launching...
+	remote:        Released v4
+	remote:        https://myherokutestapp01.herokuapp.com/ deployed to Heroku
+	remote:
+	remote: Verifying deploy.... done.
+
+## Step 12
+Run the following command to scale the dynos
+
+
+	C:\Users\Avik\git\Test>heroku ps:scale web=1
+	Scaling dynos... done, now running web at 1:Free
+
+## Step 13
+Check the application running on [Heroku](https://myherokutestapp01.herokuapp.com/).
