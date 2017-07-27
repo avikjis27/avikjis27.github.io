@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-    {% unless page.impress %}
-      {% include header.html %}
-    {% endunless %}
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+{% include head.html %}
+<body>
+  {% include nav.html %}
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
     </div>
-    {% unless page.impress %}
-      {% include footer.html %}
-    {% endunless %}
-
-  </body>
-
+  </div>
+  {% include footer.html %}
+  {% include bootstrap.html %}
+</body>
 </html>

@@ -1,0 +1,66 @@
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+	
+	background-color: rgba(0, 255, 255, 0) !important;
+    background-image: none;
+}
+
+.header-content{
+	height:100vh;
+	background-image: url(../images/green.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	
+}
+.face-box{
+	padding-top: 55vh;
+}
+.face-content-left{
+	background-color: rgba(157, 255, 159, 0.75);
+    height: 4em;
+	float:left;
+	width: 49%;
+	box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.85);
+}
+.face-content-right{
+	background-color: rgba(127, 255, 212, 0.75);
+    height: 4em;
+	float:right;
+	width: 49%;
+	box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.85);
+}
+
+.recent-interest-tile{
+	height: 12em;
+	
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tile1{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile2{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile3{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile4{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile5{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile5{
+	background-color: rgba(127, 255, 212, 0.75);
+}
+.tile6{
+	background-color: rgba(127, 255, 212, 0.75);
+}
