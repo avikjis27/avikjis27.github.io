@@ -1,49 +1,19 @@
-<header class="site-header">
-
-  <div class="wrapper text-center">
-
-    <!--<div><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a><div>-->
-
-    <p class="site-title">{{ site.title }}</p>
-    <p class="site-job">{{ site.job }}</p>
-    <ul class="site-nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-
-      {% endfor %}
-    </ul>
-
-
+<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
   </div>
-  <div class="headerwp wp-no-disp">
-    <div class="site-title">{{ site.title }}</div>
-    <ul class="fixed-nav hidden-xs hidden-sm">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <li>  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %}
-
-      {% endfor %}
-    </ul>
-    <div class="fixed-nav hidden-md hidden-lg mobmenu" id="menubutton"> <i class="fa fa-bars"></i> </div>
-    <div class="mobmenu-list hidden-md hidden-lg wp-no-disp">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <div class="text-center" style="height:3em">  <a class="page-link" style="color: white;" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
-        {% endif %}
-
-      {% endfor %}
-    </div>
-
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <h3>{{site.title}}</h3>
   </div>
-
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
   </div>
-
-
-
-
-
-
+  <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+    <a href="#overview" class="mdl-layout__tab is-active">Technology</a>
+    <a href="#features" class="mdl-layout__tab">Hobby</a>
+    <a href="#features" class="mdl-layout__tab">Gallery</a>
+    <a href="#features" class="mdl-layout__tab">Me</a>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+            <i class="material-icons" role="presentation">add</i>
+            <span class="visuallyhidden">Add</span>
+          </button>
+  </div>
 </header>
