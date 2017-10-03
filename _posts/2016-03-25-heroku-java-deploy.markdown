@@ -2,15 +2,15 @@
 layout: post
 title:  "Java web application hosting in Heroku"
 date:   2016-03-25 23:00:00 +0530
+type: technology
 categories: cloud
 tags: JAVA CLOUD HEROKU
 place: Pune, India
 author: Avik Chakraborty
 ---
 
-## Step 0
 Hosting Java web application in in Heroku is very easy compared to the other cloud PAAS. Before being started be ready with the following software
-
+<!--more-->
  - Account on Heroku [Heroku Signup](https://id.heroku.com/login)
  - Java 8 [Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
  - Maven 3 [Download](https://maven.apache.org/download.cgi)
@@ -18,10 +18,10 @@ Hosting Java web application in in Heroku is very easy compared to the other clo
  
 The links are, when ever applicable, of Windows. So if you are mischievious and using some different platform then do google when ever needed.
 
-## Step 1
+#### Step 1
 Install the Heroku toolbelt software from this [link](https://toolbelt.heroku.com/windows) and follow the prompts and click on the finish. After installing the Heroku toolbelt restart the system.
 
-## Step 2
+#### Step 2
 Open your command prompt and type the following command. The expected result is given below.
 	
     C:\Users\Avik\git\Avik>heroku version
@@ -39,7 +39,7 @@ Open your command prompt and type the following command. The expected result is 
 	heroku-spaces@2.0.14
 	heroku-status@2.1.1
 
-## Step 3
+#### Step 3
 Login to your heroku account.
 
 	C:\Users\Avik>heroku login
@@ -48,19 +48,19 @@ Login to your heroku account.
 	Password (typing will be hidden):
 	Logged in as avikjis27@gmail.com
 
-## Step 4
+#### Step 4
 Create an application on heroku from the web dashboard
 
-![Heroku - Application creation](/images/blogs/2016-03-25-heroku-java-deploy/createapp1.PNG "Application creation on Heroku")	
-![Heroku - Application configuration](/images/blogs/2016-03-25-heroku-java-deploy/createapp2.PNG "Application configuration")	
+![Heroku - Application creation](/images/blogs/2016-03-25-heroku-java-deploy/createapp1.PNG "Application creation on Heroku"){: .responsive-img } 
+![Heroku - Application configuration](/images/blogs/2016-03-25-heroku-java-deploy/createapp2.PNG "Application configuration"){: .responsive-img } 	
 
-## Step 5
+#### Step 5
 Go inside your project folder and initialize git on that using following command
 
 	C:\Users\Avik\git\Test>git init
 	Initialized empty Git repository in C:/Users/Avik/git/Test/.git/
 
-## Step 6
+#### Step 6
 Add the remote repository for the heroku application
 
 	C:\Users\Avik\git\Test>heroku git:remote -a myherokutestapp01
@@ -72,15 +72,15 @@ To cross check, whether the remote repository correctly added, run the following
 	heroku  https://git.heroku.com/myherokutestapp01.git (fetch)
 	heroku  https://git.heroku.com/myherokutestapp01.git (push)
 
-## Step 7
+#### Step 7
 Create a simple maven web application in your favourite IDE and modify the *pom.xml* file as shown below
 <script src="https://gist.github.com/avikjis27/64c3fa61df1dc50e24a6.js"></script>
 
-## Step 8
+#### Step 8
 Add a procfile in the route folder of your application
 <script src="https://gist.github.com/avikjis27/14746257672fdbe26b3c.js"></script>
 
-## Step 9
+#### Step 9
 Check the status of your working directory
 
 	C:\Users\Avik\git\Test>git status
@@ -99,7 +99,7 @@ Check the status of your working directory
 
 	nothing added to commit but untracked files present (use "git add" to track)
 	
-## Step 10
+#### Step 10
 Run the following command to commit the changes in local git repository
 
 	C:\Users\Avik\git\Avik>git add .
@@ -128,7 +128,7 @@ Run the following command to commit the changes in local git repository
 	 create mode 100644 pom.xml
 	 create mode 100644 src/com/avik/Hello.java
 
-## Step 11
+#### Step 11
 Push the changes to Heroku remote repository
 
 	remote:        [INFO] ------------------------------------------------------------------------
@@ -149,12 +149,12 @@ Push the changes to Heroku remote repository
 	remote:
 	remote: Verifying deploy.... done.
 
-## Step 12
+#### Step 12
 Run the following command to scale the dynos
 
 
 	C:\Users\Avik\git\Test>heroku ps:scale web=1
 	Scaling dynos... done, now running web at 1:Free
 
-## Step 13
-Check the application running on [Heroku](https://myherokutestapp01.herokuapp.com/).
+#### Step 13
+Check the application running on [Heroku](https://myherokutestapp01.herokuapp.com/)

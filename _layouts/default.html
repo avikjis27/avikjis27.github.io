@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% unless page.impress %}
-      {% include header.html %}
-    {% endunless %}
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-    {% unless page.impress %}
-      {% include footer.html %}
-    {% endunless %}
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {{ content }}
 
-  </body>
+    <a id="view-source" href="#" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+      <i class="material-icons">home</i></a>
+      
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+
+</body>
 
 </html>

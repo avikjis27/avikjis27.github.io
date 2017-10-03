@@ -2,13 +2,16 @@
 layout: post
 title:  "Almighty this Pointer"
 date:   2015-12-02 01:24:55 +0530
+type: technology
 categories: javascript
 tags: javascript this-pointer
 place: Mumbai, India
+
 ---
 This post is all about the most confusing topic of javascript this pointer. This post will try to illustrate the behavior of this pointer
 in different context and will uncover the magic behind those scenarios. I would also like to give some very common use cases of this pointer
 and will try to use our knowledge to feel the depth.
+<!--more-->
 
 ### What is this in JavaScript?
 
