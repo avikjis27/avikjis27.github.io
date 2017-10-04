@@ -23,8 +23,14 @@
   <div class="post-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
     <header class="post-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">{{site.title}}</span>
+        <a href="/" style="text-decoration: none;color: black;"><span class="mdl-layout-title">{{site.title}}</span></a>
         <div class="mdl-layout-spacer"></div>
+        <!--<nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <!--<a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>-->
         <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
           <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
               <i class="material-icons">search</i>
@@ -36,6 +42,7 @@
         </div>-->
       </div>
     </header>
+
     <div class="post-ribbon"></div>
     <main class="post-main mdl-layout__content">
       <div class="post-container mdl-grid">
@@ -47,9 +54,23 @@
           </div>
           <h3>{{page.title}}</h3>
           {{content}}
+          <br/><br/s>
+          <div id="disqus_thread"></div>
+          <script>
+            (function() {
+              var d = document,
+                s = d.createElement('script');
+              s.src = '//http-avikjis27-github-io.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
+
       </div>
       {% include footer.html %}
+
     </main>
   </div>
   <a id="view-source" href="{{ site.baseurl }}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
