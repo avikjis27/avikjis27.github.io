@@ -651,3 +651,16 @@
       font-size: 13px;
     }
   
+  
+.custom-post-header {
+  text-decoration: none;
+  color: rgba(77, 46, 117, 0.56);
+  font-weight: 300;
+}
+.card-header {
+  background-color: #ffab40 !important;
+}
+.card-header-image {
+  width: inherit;
+  height: 100%;
+}

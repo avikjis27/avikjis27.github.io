@@ -15,11 +15,12 @@ facebook: https://www.facebook.com/avikjis27
 linkedin: https://in.linkedin.com/in/avikjis27
 github: https://github.com/avikjis27
 description: > # this means to ignore newlines until "baseurl:"
-  This website showcase the craftsmanship of a very passionate computer engineer, an entrepreneur, a learner (strictly not a RESOURCE).
-  Besides sharing technical stuff with my fellow mates, this website helps to give a shape to my digital life. I would really like to be introduced with new friends so please don’t hesitate to put your footprint on my digital life.
+  Personal blogging space.
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://avikjis27.github.io" # the subpath of your site, e.g. /blog
 url: "http://avikjis27.github.io/" # the base hostname & protocol for your site
+cloudinary_base_url: "http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_300/v1512916968/"
+cloudinary_default_image: "http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_300/v1512916968/me.jpg"
 repo_name: avikjis27.github.io
 github_username:  avikjis27
 # Build settings

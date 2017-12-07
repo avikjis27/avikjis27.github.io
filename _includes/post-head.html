@@ -1,9 +1,9 @@
 <head>
-   <title>{{ site.title | slice: 0,49 }}</title>
+  <title>{{ page.title | slice: 0,49 }}</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="{{ site.description | slice: 0,49 }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <META NAME="author" CONTENT="Avik Chakraborty">
   <META NAME="subject" CONTENT="Technical">
   <META NAME="Classification" CONTENT="Personal blog">
@@ -17,25 +17,25 @@
   <META NAME="Robots" CONTENT="INDEX,FOLLOW">
   <META NAME="city" CONTENT="Kolkata">
   <META NAME="country" CONTENT="India">
-  <link href='http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_192/v1512916968/me.jpg' rel="icon" type="image/ico"  />
+  <link href="{{ cloudinary_default_image }}" rel="icon" type="image/ico"  />
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_192/v1512916968/me.jpg">
+  <link rel="icon" sizes="192x192" href="{{ site.cloudinary_default_image }}">
   
-  <meta property="og:title" content="{{ site.title | slice: 0,49 }}">
-  <meta property="og:image" content="http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_300/v1512916968/me.jpg">
-  <meta property="og:description" content="{{ site.description | slice: 0,49 }}">
-  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ page.title | slice: 0,49 }}">
+  <meta property="og:image" content="{% if page.image %}{{ site.cloudinary_base_url }}{{ page.image }}.jpg{% else %}{{ cloudinary_default_image }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.cloudinary_default_image }}">
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_144/v1512916968/me.jpg">
+  <meta name="msapplication-TileImage" content="{{ site.cloudinary_default_image }}">
   <meta name="msapplication-TileColor" content="#3372DF">
-  <link rel="shortcut icon" href="http://res.cloudinary.com/avik/image/upload/c_scale,q_40,w_192/v1512916968/me.jpg">
+  <link rel="shortcut icon" href="{{ site.cloudinary_default_image }}">
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
   <!--

@@ -6,6 +6,7 @@ type: technology
 categories: javascript
 tags: javascript this-pointer
 place: Mumbai, India
+image: 
 
 ---
 This post is all about the most confusing topic of javascript this pointer. This post will try to illustrate the behavior of this pointer
