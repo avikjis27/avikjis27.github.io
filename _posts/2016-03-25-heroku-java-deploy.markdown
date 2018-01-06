@@ -7,10 +7,9 @@ categories: cloud
 tags: JAVA CLOUD HEROKU
 place: Pune, India
 author: Avik Chakraborty
+gist: Hosting Java web application in in Heroku is very easy compared to the other cloud PAAS. Before being started be ready with the following software
 ---
 
-Hosting Java web application in in Heroku is very easy compared to the other cloud PAAS. Before being started be ready with the following software
-<!--more-->
  - Account on Heroku [Heroku Signup](https://id.heroku.com/login)
  - Java 8 [Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
  - Maven 3 [Download](https://maven.apache.org/download.cgi)

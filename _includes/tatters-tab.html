@@ -7,7 +7,7 @@
             {% unless post.image %}
                 <img class="card-header-image" src="http://res.cloudinary.com/avik/image/upload/q_10/v1512913575/background.jpg">
             {% else %}
-                <img class="card-header-image" src="http://res.cloudinary.com/avik/image/upload/q_10/v1512913575/{{ post.image }}">
+                <img class="card-header-image" src="http://res.cloudinary.com/avik/image/upload/v1512913575/{{ post.image }}">
             {% endunless %}
         </header>
         <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
@@ -18,7 +18,8 @@
             </div>
             <div class="mdl-card__supporting-text">
                 <h4><a class = "custom-post-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-                <h7 style="color:#ffab40;">{{ post.date | date_to_long_string }}</h7><br> {{ post.excerpt }}
+                <h7 style="color:#ffab40;">{{ post.date | date_to_long_string }}</h7><br><br>
+                {{ post.gist }}
             </div>
         </div>
 
