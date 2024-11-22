@@ -7,6 +7,9 @@ layout: 'base.njk'
     <h1 class="article-title">{{ title }}</h1>
     <span style="font-size: small;" >{{ date | postDate }}</span>, <span style="font-size: small;">About {{ content | readingTime }} reading time.</span>
     {{ content | safe}}
-    {% gh_edit page %}
+    <div style="text-align:right;font-size: small;">
+        {% gh_edit page %}
+    </div>
 </div>
+
 </article>
