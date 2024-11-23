@@ -11,7 +11,7 @@ layout: 'base.njk'
         {# <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet__image"> #}
         {# <img src="https://live.staticflickr.com/{{ post.data.image }}_b.jpg" class="snippet__image" alt="{{ post.data.imageAlt }}"> #}
         <h3 class="snippet__title"> {{ post.data.title }}</h3>
-        <p class="snippet__meta">by <span>{{ post.data.author }} </span> on <span>{{ post.data.date | postDate }}</span></p>
+        <p class="snippet__meta">on <span>{{ post.data.date | postDate }}</span></p>
         <p class="snippet__body">{{ post.data.description }}</p>
         <a href="{{ post.url }}" class="btn btn--primary">Continue Reading</a>
       </article>
